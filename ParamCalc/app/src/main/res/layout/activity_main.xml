@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="6dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="64dp" />
+
+    <TextView
+        android:id="@+id/savedValueDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Value: 0"
+        android:textSize="15dp"
+        android:layout_gravity="left"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="523dp"
+        android:background="#E6E5E5"
+        android:orientation="vertical"
+        android:paddingVertical="16dp">
+
+        <!-- First Row of Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#CA0303"
+                android:text="C"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/saveValue"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#4A6F95"
+                android:text="S"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/retrieveValue"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#4A6F95"
+                android:text="R"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#4A6F95"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+        </LinearLayout>
+
+        <!-- Second Row of Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#4A6F95"
+                android:text="*"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+        </LinearLayout>
+
+        <!-- Third Row of Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#4A6F95"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+        </LinearLayout>
+
+        <!-- Fourth Row of Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/subtract"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#4A6F95"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+        </LinearLayout>
+
+        <!-- Fifth Row of Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allClear"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#CA0303"
+                android:text="AC"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/decimal"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#F6F6F5"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/equals"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#CA0303"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
