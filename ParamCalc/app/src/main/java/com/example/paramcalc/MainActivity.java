@@ -1,10 +1,5 @@
 package com.example.paramcalc;
 
-/*
- *  Parampal Singh
- *  7003114
- */
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
